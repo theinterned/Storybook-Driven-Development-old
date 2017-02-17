@@ -15,7 +15,6 @@
 .medium--sharp { composes: borderWidth--medium borderStyle borderRadius--sharp; }
 .heavy--sharp { composes: borderWidth--heavy borderStyle borderRadius--sharp; }
 
-
 .borderWidth--top--light { border-top-width: 0.1rem; }
 .borderWidth--top--medium { border-top-width: 0.2rem; }
 .borderWidth--top--heavy { border-top-width: 0.3rem; }
@@ -24,7 +23,6 @@
 .light--top--sharp { composes: borderWidth--top--light borderStyle--top borderRadius--sharp; }
 .medium--top--sharp { composes: borderWidth--top--medium borderStyle--top borderRadius--sharp; }
 .heavy--top--sharp { composes: borderWidth--top--heavy borderStyle--top borderRadius--sharp; }
-
 
 .borderWidth--bottom--light { border-bottom-width: 0.1rem; }
 .borderWidth--bottom--medium { border-bottom-width: 0.2rem; }
@@ -35,7 +33,6 @@
 .medium--bottom--sharp { composes: borderWidth--bottom--medium borderStyle--bottom borderRadius--sharp; }
 .heavy--bottom--sharp { composes: borderWidth--bottom--heavy borderStyle--bottom borderRadius--sharp; }
 
-
 .borderWidth--left--light { border-left-width: 0.1rem; }
 .borderWidth--left--medium { border-left-width: 0.2rem; }
 .borderWidth--left--heavy { border-left-width: 0.3rem; }
@@ -44,7 +41,6 @@
 .light--left--sharp { composes: borderWidth--left--light borderStyle--left borderRadius--sharp; }
 .medium--left--sharp { composes: borderWidth--left--medium borderStyle--left borderRadius--sharp; }
 .heavy--left--sharp { composes: borderWidth--left--heavy borderStyle--left borderRadius--sharp; }
-
 
 .borderWidth--right--light { border-right-width: 0.1rem; }
 .borderWidth--right--medium { border-right-width: 0.2rem; }
