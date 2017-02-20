@@ -6,10 +6,10 @@ const isChecked = (value, chosenValue) => value === chosenValue;
 
 const isDisabled = (disabled, allDisabled) => (disabled === true || allDisabled === true);
 
-const labelClass = (isActive, isDisabled) => {
+const labelClass = (isLabelActive, isLabelDisabled) => {
   const classKey = ['label'];
-  if (isActive) classKey.push('Active');
-  if (isDisabled) classKey.push('Disabled');
+  if (isLabelActive) classKey.push('Active');
+  if (isLabelDisabled) classKey.push('Disabled');
   return classKey.join('');
 };
 

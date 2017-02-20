@@ -48,6 +48,7 @@ describe('styleProp PropType', () => {
     shallow(<Stub styles={{ classOne: 33 }} />);
 
     expect(console.error).toBeCalledWith(expect.stringMatching(
+      // eslint-disable-next-line max-len
       /Warning: Failed prop type: Invalid prop `styles.classOne` of type `number` supplied to `Stub`, expected `string`/,
     ));
   });
