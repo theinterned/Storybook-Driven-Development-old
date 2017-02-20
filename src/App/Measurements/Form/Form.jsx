@@ -16,9 +16,9 @@ const measurementTypes = [
 ];
 
 const MeasurementForm = ({
-  interval_name,
-  start_milestone,
-  end_milestone,
+  intervalName,
+  startMilestone,
+  endMilestone,
   handleChange,
   measurementType,
 }) => (
@@ -26,8 +26,8 @@ const MeasurementForm = ({
     <h2 className={styles.title}>Create a new measurement</h2>
 
     <TextField
-      name="interval_name"
-      value={interval_name}
+      name="intervalName"
+      value={intervalName}
       label="Name your measuremnt"
       onChange={handleChange}
     />
@@ -43,9 +43,9 @@ const MeasurementForm = ({
     { measurementType === 'milestone' ?
       <div>
         <SelectField
-          name="start_milestone"
+          name="startMilestone"
           label="Select a milestone"
-          value={start_milestone}
+          value={startMilestone}
           options={options}
           onChange={handleChange}
         />
@@ -53,17 +53,17 @@ const MeasurementForm = ({
     :
       <div>
         <SelectField
-          name="start_milestone"
+          name="startMilestone"
           label="Select start milestone"
-          value={start_milestone}
+          value={startMilestone}
           options={options}
           onChange={handleChange}
         />
 
         <SelectField
-          name="end_milestone"
+          name="endMilestone"
           label="Select end milestone"
-          value={end_milestone}
+          value={endMilestone}
           options={options}
           onChange={handleChange}
         />
@@ -78,9 +78,9 @@ const MeasurementForm = ({
 );
 
 MeasurementForm.propTypes = {
-  interval_name: PropTypes.string,
-  start_milestone: PropTypes.string,
-  end_milestone: PropTypes.string,
+  intervalName: PropTypes.string,
+  startMilestone: PropTypes.string,
+  endMilestone: PropTypes.string,
   measurementType: PropTypes.string,
   handleChange: PropTypes.func,
 };

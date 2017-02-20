@@ -4,9 +4,9 @@ import Form from './Form';
 
 export default function FormStory() {
   const props = {
-    interval_name: '',
-    start_milestone: '',
-    end_milestone: '',
+    intervalName: '',
+    startMilestone: '',
+    endMilestone: '',
     handleChange: action('handleChange'),
   };
 

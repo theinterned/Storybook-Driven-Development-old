@@ -5,9 +5,9 @@ import FormController from './FormController';
 
 export default function FormStory() {
   const props = {
-    interval_name: '',
-    start_milestone: '',
-    end_milestone: '',
+    intervalName: '',
+    startMilestone: '',
+    endMilestone: '',
     measurementType: '',
     handleChange: action('handleChange'),
   };

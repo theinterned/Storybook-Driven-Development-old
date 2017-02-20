@@ -5,6 +5,7 @@ import FormController from './FormController';
 
 describe('Interval FormController', () => {
   let subject;
+  // eslint-disable-next-line react/prop-types
   const Mock = props => <span>{ props.children }</span>;
   const child = () => subject.find('Mock');
   const expectStateAndPropsToMatch = (key, value) => {
@@ -22,9 +23,9 @@ describe('Interval FormController', () => {
 
   describe('form values', () => {
     const expectedFormNames = expect.arrayContaining([
-      'interval_name',
-      'start_milestone',
-      'end_milestone',
+      'intervalName',
+      'startMilestone',
+      'endMilestone',
     ]);
 
     it('maintains form values in its state', () => {
@@ -44,17 +45,17 @@ describe('Interval FormController', () => {
     });
 
     it('updates state with the name and value of the target recieved in the event', () => {
-      expectStateAndPropsToMatch('interval_name', '');
+      expectStateAndPropsToMatch('intervalName', '');
 
       const mockEvent = {
         target: {
-          name: 'interval_name',
+          name: 'intervalName',
           value: 'changed value',
         },
       };
       subject.instance().handleChange(mockEvent);
 
-      expectStateAndPropsToMatch('interval_name', 'changed value');
+      expectStateAndPropsToMatch('intervalName', 'changed value');
     });
   });
 });

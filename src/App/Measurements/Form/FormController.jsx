@@ -8,9 +8,9 @@ class FormController extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      interval_name: '',
-      start_milestone: '',
-      end_milestone: '',
+      intervalName: '',
+      startMilestone: '',
+      endMilestone: '',
       measurementType: 'milestone',
     };
 

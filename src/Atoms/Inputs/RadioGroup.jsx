@@ -22,7 +22,11 @@ const mapOptions = (
   onChange,
 ) => (options.map(
   ({ text, value, disabled = false }) => (
-    <label className={styles[labelClass(isChecked(value, chosenValue), isDisabled(disabled, allDisabled))]} key={value}>
+    <label
+      htmlFor={name}
+      className={styles[labelClass(isChecked(value, chosenValue), isDisabled(disabled, allDisabled))]}
+      key={value}
+    >
       <input
         className={styles.radio}
         type="radio"
