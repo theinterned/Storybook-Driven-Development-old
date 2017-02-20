@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf, action, linkTo } from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook';
 import cloneDeep from 'lodash/cloneDeep';
 import RadioGroup from './RadioGroup';
 
