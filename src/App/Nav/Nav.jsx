@@ -1,8 +1,8 @@
+import Icon from '~/Atoms/Icon';
+import logo from '~/App/nulogy_logo.svg';
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
-import Icon from '~/Atoms/Icon';
 import styles from './Nav.css';
-import logo from '~/App/nulogy_logo.svg';
 
 const sections = [
   { value: '/home', text: 'Home' },

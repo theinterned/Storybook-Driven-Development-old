@@ -16,7 +16,7 @@ describe('styleProp PropType', () => {
     styles: styleProp(icssStyles),
   };
 
-  beforeEach(() => global.console = { error: jest.fn() });
+  beforeEach(() => (global.console = { error: jest.fn() }));
 
   it("doesn't error when the prop is ommited", () => {
     shallow(<Stub />);
