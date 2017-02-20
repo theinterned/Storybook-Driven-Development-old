@@ -1,7 +1,8 @@
+/* eslint-disable no-console */
+
 import React from 'react';
 import { shallow } from 'enzyme';
 import styleProp from './styleProp';
-
 
 describe('styleProp PropType', () => {
   const icssStyles = {
