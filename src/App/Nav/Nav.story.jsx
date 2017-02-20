@@ -13,8 +13,8 @@ export default function NavStory() {
     .add('with other options', () => (
       <Nav
         options={[
-          { value: "/home", text: "Home" },
-          { value: "/edit", text: "Edit" },
+          { value: '/home', text: 'Home' },
+          { value: '/edit', text: 'Edit' },
         ]}
       />
     ));

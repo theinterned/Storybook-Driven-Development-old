@@ -1,18 +1,18 @@
-import React from "react";
-import { shallow } from "enzyme";
-import styleProp from "./styleProp";
+import React from 'react';
+import { shallow } from 'enzyme';
+import styleProp from './styleProp';
 
 
-describe("styleProp PropType", () => {
+describe('styleProp PropType', () => {
   const icssStyles = {
-    "classOne": "classOne",
-    "classTwo": "classTwo",
-    "classThree": "classThree",
+    classOne: 'classOne',
+    classTwo: 'classTwo',
+    classThree: 'classThree',
   };
 
   const Stub = ({ styles }) => <div className={styles} />;
   Stub.propTypes = {
-    styles: styleProp(icssStyles)
+    styles: styleProp(icssStyles),
   };
 
   beforeEach(() => global.console = { error: jest.fn() });
@@ -35,19 +35,19 @@ describe("styleProp PropType", () => {
     expect(console.error).not.toBeCalled();
   });
 
-  it("errors when prop is not an object", () => {
+  it('errors when prop is not an object', () => {
     shallow(<Stub styles="not what I want" />);
 
     expect(console.error).toBeCalledWith(expect.stringMatching(
-      /Warning: Failed prop type: Invalid prop `styles` of type `string` supplied to `Stub`, expected `object`/
+      /Warning: Failed prop type: Invalid prop `styles` of type `string` supplied to `Stub`, expected `object`/,
     ));
   });
 
-  it("errors when the value of a class is not a string", () => {
+  it('errors when the value of a class is not a string', () => {
     shallow(<Stub styles={{ classOne: 33 }} />);
 
     expect(console.error).toBeCalledWith(expect.stringMatching(
-      /Warning: Failed prop type: Invalid prop `styles.classOne` of type `number` supplied to `Stub`, expected `string`/
+      /Warning: Failed prop type: Invalid prop `styles.classOne` of type `number` supplied to `Stub`, expected `string`/,
     ));
   });
 });

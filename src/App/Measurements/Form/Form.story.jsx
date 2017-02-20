@@ -5,12 +5,12 @@ import FormController from './FormController';
 
 export default function FormStory() {
   const props = {
-    interval_name: "",
-    start_milestone: "",
-    end_milestone: "",
-    measurementType: "",
-    handleChange: action("handleChange"),
-  }
+    interval_name: '',
+    start_milestone: '',
+    end_milestone: '',
+    measurementType: '',
+    handleChange: action('handleChange'),
+  };
 
   storiesOf('Measurement Form', module)
     .add('default', () => (

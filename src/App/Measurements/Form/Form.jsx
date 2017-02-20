@@ -1,18 +1,18 @@
-import React, { PropTypes } from "react";
-import Button from "~/Atoms/Button";
-import styles from "~/Atoms/Form.css";
-import RadioField from "~/Molecules/Fields/RadioField";
-import TextField from "~/Molecules/Fields/TextField";
-import SelectField from "~/Molecules/Fields/SelectField";
+import React, { PropTypes } from 'react';
+import Button from '~/Atoms/Button';
+import styles from '~/Atoms/Form.css';
+import RadioField from '~/Molecules/Fields/RadioField';
+import TextField from '~/Molecules/Fields/TextField';
+import SelectField from '~/Molecules/Fields/SelectField';
 
 const options = [
-  { value: "plv_available", text: "PLV available" },
-  { value: "po_due", text: "PO due" }
+  { value: 'plv_available', text: 'PLV available' },
+  { value: 'po_due', text: 'PO due' },
 ];
 
 const measurementTypes = [
-  { value: "milestone", text: "A single point milestone" },
-  { value: "interval", text: "An interval between two points" },
+  { value: 'milestone', text: 'A single point milestone' },
+  { value: 'interval', text: 'An interval between two points' },
 ];
 
 const MeasurementForm = ({
@@ -40,7 +40,7 @@ const MeasurementForm = ({
       onChange={handleChange}
     />
 
-    { measurementType === "milestone" ?
+    { measurementType === 'milestone' ?
       <div>
         <SelectField
           name="start_milestone"
@@ -83,6 +83,6 @@ MeasurementForm.propTypes = {
   end_milestone: PropTypes.string,
   measurementType: PropTypes.string,
   handleChange: PropTypes.func,
-}
+};
 
 export default MeasurementForm;
