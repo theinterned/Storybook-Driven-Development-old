@@ -3,7 +3,7 @@
   composes: medium from "~/Quarks/Borders.css";
   composes: one__light from "~/Quarks/Shadows.css";
   line-height: 3.4rem;
-  height: 4rem;
+  min-height: 4rem;
   padding: 0 1.5rem;
 }
 

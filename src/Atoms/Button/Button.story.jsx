@@ -19,5 +19,8 @@ export default function ButtonStory() {
     ))
     .add('disabled submit', () => (
       <Button {...props} submit disabled>Submit me</Button>
+    ))
+    .add('with really long text content', () => (
+      <Button {...props}>Sit sunt cillum fugiat aliquip voluptate reprehenderit dolore Lorem tempor aliqua.</Button>
     ));
 }
