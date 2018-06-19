@@ -1,5 +1,7 @@
 # Storybook Driven Development [![Build Status](https://travis-ci.org/theinterned/Storybook-Driven-Development.svg?branch=master)](https://travis-ci.org/theinterned/Storybook-Driven-Development)
 
+Read the blog post on Medium: [Storybook Driven Devlopment](https://medium.com/nulogy/storybook-driven-development-a3c517276c07)
+
 This repo is a demonstration of how to practically use Storybook Driven Development.
 
 [View the storybook here](https://theinterned.github.io/Storybook-Driven-Development/)
